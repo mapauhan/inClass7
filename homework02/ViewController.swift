@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 
 class ViewController: UIViewController {
@@ -22,7 +23,19 @@ class ViewController: UIViewController {
         print( "viewDidLoad" )
         let cellNib = UINib(nibName: "ContactCell", bundle: nil)
         tableView.register(cellNib, forCellReuseIdentifier: "mycell")
+        var myParameters = [Int:String]()
+        
+        AF.request("http://ec2-18-234-222-229.compute-1.amazonaws.com/contacts", method: .post, parameters: nil, encoding: URLEncoding.default).responseString { response in
+            if response.result.isSuccess {
+                print(response.result.value!)
+            } else {
+                print("not connected to server")
+            }
+
+        }
     }
+    
+
     
    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)

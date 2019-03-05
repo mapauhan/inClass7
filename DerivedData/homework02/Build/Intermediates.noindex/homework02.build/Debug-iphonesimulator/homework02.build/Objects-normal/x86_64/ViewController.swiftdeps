@@ -13,6 +13,7 @@ provides-dynamic-lookup:
 - "viewDidLoad"
 depends-top-level:
 - !private "=="
+- !private "AF"
 - "AssignmentPrecedence"
 - "Bool"
 - !private "BooleanLiteralType"
@@ -35,10 +36,12 @@ depends-top-level:
 - "UITableViewDataSource"
 - "UITableViewDelegate"
 - "UIViewController"
+- !private "URLEncoding"
 - !private "UnicodeScalarType"
 - "ViewController"
 - !private "print"
 depends-member:
+- !private ["9Alamofire2AFO", "request"]
 - !private ["Sa", "append"]
 - !private ["Sa", "count"]
 - !private ["Sa", "remove"]
@@ -65,9 +68,11 @@ depends-member:
 - !private ["So15CALayerDelegateP", "reloadData"]
 - !private ["So15CALayerDelegateP", "text"]
 - !private ["So15CALayerDelegateP", "typeLabel"]
+- !private ["s7CVarArgP", "AF"]
 - ["s7CVarArgP", "Contact"]
 - !private ["s7CVarArgP", "String"]
 - !private ["s7CVarArgP", "UINib"]
+- !private ["s7CVarArgP", "URLEncoding"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "append"]
@@ -139,9 +144,11 @@ depends-member:
 - !private ["10homework0211ContactCellC", "nameLabel"]
 - !private ["10homework0211ContactCellC", "phoneLabel"]
 - !private ["10homework0211ContactCellC", "typeLabel"]
+- !private ["10homework0219ContactCellDelegateP", "AF"]
 - ["10homework0219ContactCellDelegateP", "Contact"]
 - !private ["10homework0219ContactCellDelegateP", "String"]
 - !private ["10homework0219ContactCellDelegateP", "UINib"]
+- !private ["10homework0219ContactCellDelegateP", "URLEncoding"]
 - ["10homework0219ContactCellDelegateP", ""]
 - !private ["10homework0219ContactCellDelegateP", "contactList"]
 - ["10homework0219ContactCellDelegateP", "deleteClicked"]
@@ -171,9 +178,11 @@ depends-member:
 - ["10homework0219ContactCellDelegateP", "tableView"]
 - ["10homework0219ContactCellDelegateP", "viewForZooming"]
 - ["10homework0219ContactCellDelegateP", "viewForZoomingInScrollView"]
+- !private ["s28CustomDebugStringConvertibleP", "AF"]
 - ["s28CustomDebugStringConvertibleP", "Contact"]
 - !private ["s28CustomDebugStringConvertibleP", "String"]
 - !private ["s28CustomDebugStringConvertibleP", "UINib"]
+- !private ["s28CustomDebugStringConvertibleP", "URLEncoding"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "append"]
 - !private ["s28CustomDebugStringConvertibleP", "contact"]
@@ -190,6 +199,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isSuccess"]
 - !private ["s28CustomDebugStringConvertibleP", "nameLabel"]
 - !private ["s28CustomDebugStringConvertibleP", "newContact"]
 - ["s28CustomDebugStringConvertibleP", "numberOfSections"]
@@ -200,6 +210,8 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "register"]
 - !private ["s28CustomDebugStringConvertibleP", "reloadData"]
 - !private ["s28CustomDebugStringConvertibleP", "remove"]
+- !private ["s28CustomDebugStringConvertibleP", "responseString"]
+- !private ["s28CustomDebugStringConvertibleP", "result"]
 - !private ["s28CustomDebugStringConvertibleP", "row"]
 - ["s28CustomDebugStringConvertibleP", "scrollViewDidChangeAdjustedContentInset"]
 - ["s28CustomDebugStringConvertibleP", "scrollViewDidEndDecelerating"]
@@ -221,6 +233,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "tableView"]
 - !private ["s28CustomDebugStringConvertibleP", "text"]
 - !private ["s28CustomDebugStringConvertibleP", "typeLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "value"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidAppear"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - ["s28CustomDebugStringConvertibleP", "viewForZooming"]
@@ -239,9 +252,11 @@ depends-member:
 - !private ["s17CustomReflectableP", "remove"]
 - !private ["s17CustomReflectableP", "row"]
 - !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "AF"]
 - ["s23CustomStringConvertibleP", "Contact"]
 - !private ["s23CustomStringConvertibleP", "String"]
 - !private ["s23CustomStringConvertibleP", "UINib"]
+- !private ["s23CustomStringConvertibleP", "URLEncoding"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "append"]
@@ -259,6 +274,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isSuccess"]
 - !private ["s23CustomStringConvertibleP", "nameLabel"]
 - !private ["s23CustomStringConvertibleP", "newContact"]
 - ["s23CustomStringConvertibleP", "numberOfSections"]
@@ -269,6 +285,8 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "register"]
 - !private ["s23CustomStringConvertibleP", "reloadData"]
 - !private ["s23CustomStringConvertibleP", "remove"]
+- !private ["s23CustomStringConvertibleP", "responseString"]
+- !private ["s23CustomStringConvertibleP", "result"]
 - !private ["s23CustomStringConvertibleP", "row"]
 - ["s23CustomStringConvertibleP", "scrollViewDidChangeAdjustedContentInset"]
 - ["s23CustomStringConvertibleP", "scrollViewDidEndDecelerating"]
@@ -290,10 +308,13 @@ depends-member:
 - ["s23CustomStringConvertibleP", "tableView"]
 - !private ["s23CustomStringConvertibleP", "text"]
 - !private ["s23CustomStringConvertibleP", "typeLabel"]
+- !private ["s23CustomStringConvertibleP", "value"]
 - !private ["s23CustomStringConvertibleP", "viewDidAppear"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - ["s23CustomStringConvertibleP", "viewForZooming"]
 - ["s23CustomStringConvertibleP", "viewForZoomingInScrollView"]
+- !private ["9Alamofire11DataRequestC", "responseString"]
+- !private ["9Alamofire12DataResponseV", "result"]
 - !private ["Se", "_getBuiltinLogicValue"]
 - !private ["Se", "append"]
 - !private ["Se", "count"]
@@ -317,9 +338,11 @@ depends-member:
 - !private ["SE", "remove"]
 - !private ["SE", "row"]
 - !private ["SE", "subscript"]
+- !private ["SQ", "AF"]
 - ["SQ", "Contact"]
 - !private ["SQ", "String"]
 - !private ["SQ", "UINib"]
+- !private ["SQ", "URLEncoding"]
 - ["SQ", ""]
 - !private ["SQ", "_getBuiltinLogicValue"]
 - !private ["SQ", "append"]
@@ -331,6 +354,7 @@ depends-member:
 - !private ["SQ", "dequeueReusableCell"]
 - !private ["SQ", "destination"]
 - !private ["SQ", "emailLabel"]
+- !private ["SQ", "get"]
 - !private ["SQ", "identifier"]
 - !private ["SQ", "indexPath"]
 - ["SQ", "indexPathForPreferredFocusedView"]
@@ -347,6 +371,7 @@ depends-member:
 - !private ["SQ", "register"]
 - !private ["SQ", "reloadData"]
 - !private ["SQ", "remove"]
+- !private ["SQ", "responseString"]
 - !private ["SQ", "row"]
 - ["SQ", "scrollViewDidChangeAdjustedContentInset"]
 - ["SQ", "scrollViewDidEndDecelerating"]
@@ -387,9 +412,12 @@ depends-member:
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["9Alamofire10HTTPMethodO", "get"]
+- !private ["SH", "AF"]
 - ["SH", "Contact"]
 - !private ["SH", "String"]
 - !private ["SH", "UINib"]
+- !private ["SH", "URLEncoding"]
 - ["SH", ""]
 - !private ["SH", "_getBuiltinLogicValue"]
 - !private ["SH", "append"]
@@ -401,6 +429,7 @@ depends-member:
 - !private ["SH", "dequeueReusableCell"]
 - !private ["SH", "destination"]
 - !private ["SH", "emailLabel"]
+- !private ["SH", "get"]
 - !private ["SH", "identifier"]
 - !private ["SH", "indexPath"]
 - ["SH", "indexPathForPreferredFocusedView"]
@@ -417,6 +446,7 @@ depends-member:
 - !private ["SH", "register"]
 - !private ["SH", "reloadData"]
 - !private ["SH", "remove"]
+- !private ["SH", "responseString"]
 - !private ["SH", "row"]
 - ["SH", "scrollViewDidChangeAdjustedContentInset"]
 - ["SH", "scrollViewDidEndDecelerating"]
@@ -453,9 +483,11 @@ depends-member:
 - !private ["SM", "remove"]
 - !private ["SM", "row"]
 - !private ["SM", "subscript"]
+- !private ["So8NSCodingP", "AF"]
 - ["So8NSCodingP", "Contact"]
 - !private ["So8NSCodingP", "String"]
 - !private ["So8NSCodingP", "UINib"]
+- !private ["So8NSCodingP", "URLEncoding"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "contact"]
 - !private ["So8NSCodingP", "contactList"]
@@ -500,9 +532,11 @@ depends-member:
 - !private ["So8NSCodingP", "viewDidLoad"]
 - ["So8NSCodingP", "viewForZooming"]
 - ["So8NSCodingP", "viewForZoomingInScrollView"]
+- !private ["So26NSExtensionRequestHandlingP", "AF"]
 - ["So26NSExtensionRequestHandlingP", "Contact"]
 - !private ["So26NSExtensionRequestHandlingP", "String"]
 - !private ["So26NSExtensionRequestHandlingP", "UINib"]
+- !private ["So26NSExtensionRequestHandlingP", "URLEncoding"]
 - ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So26NSExtensionRequestHandlingP", "contact"]
 - !private ["So26NSExtensionRequestHandlingP", "contactList"]
@@ -537,6 +571,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - ["So26NSExtensionRequestHandlingP", "viewForZooming"]
 - ["So26NSExtensionRequestHandlingP", "viewForZoomingInScrollView"]
+- !private ["So8NSObjectC", "AF"]
 - ["So8NSObjectC", "Bool"]
 - ["So8NSObjectC", "Contact"]
 - !private ["So8NSObjectC", "ContactCell"]
@@ -549,6 +584,7 @@ depends-member:
 - ["So8NSObjectC", "UIStoryboardSegue"]
 - ["So8NSObjectC", "UITableView"]
 - ["So8NSObjectC", "UITableViewCell"]
+- !private ["So8NSObjectC", "URLEncoding"]
 - !private ["So8NSObjectC", "contact"]
 - ["So8NSObjectC", "contactList"]
 - !private ["So8NSObjectC", "delegate"]
@@ -596,9 +632,11 @@ depends-member:
 - ["So8NSObjectC", "viewDidLoad"]
 - ["So8NSObjectC", "viewForZooming"]
 - ["So8NSObjectC", "viewForZoomingInScrollView"]
+- !private ["So8NSObjectP", "AF"]
 - ["So8NSObjectP", "Contact"]
 - !private ["So8NSObjectP", "String"]
 - !private ["So8NSObjectP", "UINib"]
+- !private ["So8NSObjectP", "URLEncoding"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "contact"]
 - !private ["So8NSObjectP", "contactList"]
@@ -648,6 +686,7 @@ depends-member:
 - !private ["Sq", "indexPath"]
 - !private ["Sq", "register"]
 - !private ["Sq", "reloadData"]
+- !private ["9Alamofire17ParameterEncodingP", "default"]
 - !private ["Sk", "append"]
 - !private ["Sk", "count"]
 - !private ["Sk", "remove"]
@@ -659,7 +698,11 @@ depends-member:
 - !private ["Sm", "init"]
 - !private ["Sm", "remove"]
 - !private ["Sm", "subscript"]
+- !private ["SY", "get"]
 - !private ["10Foundation20ReferenceConvertibleP", "row"]
+- !private ["9Alamofire7RequestC", "responseString"]
+- !private ["9Alamofire6ResultO", "isSuccess"]
+- !private ["9Alamofire6ResultO", "value"]
 - !private ["ST", "append"]
 - !private ["ST", "count"]
 - !private ["ST", "init"]
@@ -695,9 +738,11 @@ depends-member:
 - !private ["So12UIAppearanceP", "reloadData"]
 - !private ["So12UIAppearanceP", "text"]
 - !private ["So12UIAppearanceP", "typeLabel"]
+- !private ["So21UIAppearanceContainerP", "AF"]
 - ["So21UIAppearanceContainerP", "Contact"]
 - !private ["So21UIAppearanceContainerP", "String"]
 - !private ["So21UIAppearanceContainerP", "UINib"]
+- !private ["So21UIAppearanceContainerP", "URLEncoding"]
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "contact"]
 - !private ["So21UIAppearanceContainerP", "contactList"]
@@ -742,9 +787,11 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
 - ["So21UIAppearanceContainerP", "viewForZooming"]
 - ["So21UIAppearanceContainerP", "viewForZoomingInScrollView"]
+- !private ["So18UIContentContainerP", "AF"]
 - ["So18UIContentContainerP", "Contact"]
 - !private ["So18UIContentContainerP", "String"]
 - !private ["So18UIContentContainerP", "UINib"]
+- !private ["So18UIContentContainerP", "URLEncoding"]
 - ["So18UIContentContainerP", ""]
 - !private ["So18UIContentContainerP", "contact"]
 - !private ["So18UIContentContainerP", "contactList"]
@@ -804,9 +851,11 @@ depends-member:
 - !private ["So13UIDynamicItemP", "reloadData"]
 - !private ["So13UIDynamicItemP", "text"]
 - !private ["So13UIDynamicItemP", "typeLabel"]
+- !private ["So18UIFocusEnvironmentP", "AF"]
 - ["So18UIFocusEnvironmentP", "Contact"]
 - !private ["So18UIFocusEnvironmentP", "String"]
 - !private ["So18UIFocusEnvironmentP", "UINib"]
+- !private ["So18UIFocusEnvironmentP", "URLEncoding"]
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "contact"]
 - !private ["So18UIFocusEnvironmentP", "contactList"]
@@ -882,9 +931,11 @@ depends-member:
 - !private ["So27UIGestureRecognizerDelegateP", "typeLabel"]
 - !private ["So7UILabelC", "text"]
 - !private ["So5UINibC", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "AF"]
 - ["So30UIPasteConfigurationSupportingP", "Contact"]
 - !private ["So30UIPasteConfigurationSupportingP", "String"]
 - !private ["So30UIPasteConfigurationSupportingP", "UINib"]
+- !private ["So30UIPasteConfigurationSupportingP", "URLEncoding"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "contact"]
 - !private ["So30UIPasteConfigurationSupportingP", "contactList"]
@@ -929,6 +980,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - ["So30UIPasteConfigurationSupportingP", "viewForZooming"]
 - ["So30UIPasteConfigurationSupportingP", "viewForZoomingInScrollView"]
+- !private ["So11UIResponderC", "AF"]
 - ["So11UIResponderC", "Bool"]
 - ["So11UIResponderC", "Contact"]
 - !private ["So11UIResponderC", "ContactCell"]
@@ -941,6 +993,7 @@ depends-member:
 - ["So11UIResponderC", "UIStoryboardSegue"]
 - ["So11UIResponderC", "UITableView"]
 - ["So11UIResponderC", "UITableViewCell"]
+- !private ["So11UIResponderC", "URLEncoding"]
 - !private ["So11UIResponderC", "contact"]
 - ["So11UIResponderC", "contactList"]
 - !private ["So11UIResponderC", "delegate"]
@@ -986,9 +1039,11 @@ depends-member:
 - ["So11UIResponderC", "viewDidLoad"]
 - ["So11UIResponderC", "viewForZooming"]
 - ["So11UIResponderC", "viewForZoomingInScrollView"]
+- !private ["So30UIResponderStandardEditActionsP", "AF"]
 - ["So30UIResponderStandardEditActionsP", "Contact"]
 - !private ["So30UIResponderStandardEditActionsP", "String"]
 - !private ["So30UIResponderStandardEditActionsP", "UINib"]
+- !private ["So30UIResponderStandardEditActionsP", "URLEncoding"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "contact"]
 - !private ["So30UIResponderStandardEditActionsP", "contactList"]
@@ -1037,9 +1092,11 @@ depends-member:
 - !private ["So12UIScrollViewC", "indexPath"]
 - !private ["So12UIScrollViewC", "register"]
 - !private ["So12UIScrollViewC", "reloadData"]
+- !private ["So20UIScrollViewDelegateP", "AF"]
 - ["So20UIScrollViewDelegateP", "Contact"]
 - !private ["So20UIScrollViewDelegateP", "String"]
 - !private ["So20UIScrollViewDelegateP", "UINib"]
+- !private ["So20UIScrollViewDelegateP", "URLEncoding"]
 - ["So20UIScrollViewDelegateP", ""]
 - !private ["So20UIScrollViewDelegateP", "contactList"]
 - ["So20UIScrollViewDelegateP", "deleteClicked"]
@@ -1073,9 +1130,11 @@ depends-member:
 - !private ["So35UISpringLoadedInteractionSupportingP", "indexPath"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "register"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "reloadData"]
+- !private ["So16UIStateRestoringP", "AF"]
 - ["So16UIStateRestoringP", "Contact"]
 - !private ["So16UIStateRestoringP", "String"]
 - !private ["So16UIStateRestoringP", "UINib"]
+- !private ["So16UIStateRestoringP", "URLEncoding"]
 - ["So16UIStateRestoringP", ""]
 - !private ["So16UIStateRestoringP", "contact"]
 - !private ["So16UIStateRestoringP", "contactList"]
@@ -1121,9 +1180,11 @@ depends-member:
 - !private ["So15UITableViewCellC", "nameLabel"]
 - !private ["So15UITableViewCellC", "phoneLabel"]
 - !private ["So15UITableViewCellC", "typeLabel"]
+- !private ["So21UITableViewDataSourceP", "AF"]
 - ["So21UITableViewDataSourceP", "Contact"]
 - !private ["So21UITableViewDataSourceP", "String"]
 - !private ["So21UITableViewDataSourceP", "UINib"]
+- !private ["So21UITableViewDataSourceP", "URLEncoding"]
 - ["So21UITableViewDataSourceP", ""]
 - !private ["So21UITableViewDataSourceP", "contactList"]
 - ["So21UITableViewDataSourceP", "deleteClicked"]
@@ -1153,9 +1214,11 @@ depends-member:
 - ["So21UITableViewDataSourceP", "tableView"]
 - ["So21UITableViewDataSourceP", "viewForZooming"]
 - ["So21UITableViewDataSourceP", "viewForZoomingInScrollView"]
+- !private ["So19UITableViewDelegateP", "AF"]
 - ["So19UITableViewDelegateP", "Contact"]
 - !private ["So19UITableViewDelegateP", "String"]
 - !private ["So19UITableViewDelegateP", "UINib"]
+- !private ["So19UITableViewDelegateP", "URLEncoding"]
 - ["So19UITableViewDelegateP", ""]
 - !private ["So19UITableViewDelegateP", "contactList"]
 - ["So19UITableViewDelegateP", "deleteClicked"]
@@ -1185,9 +1248,11 @@ depends-member:
 - ["So19UITableViewDelegateP", "tableView"]
 - ["So19UITableViewDelegateP", "viewForZooming"]
 - ["So19UITableViewDelegateP", "viewForZoomingInScrollView"]
+- !private ["So18UITraitEnvironmentP", "AF"]
 - ["So18UITraitEnvironmentP", "Contact"]
 - !private ["So18UITraitEnvironmentP", "String"]
 - !private ["So18UITraitEnvironmentP", "UINib"]
+- !private ["So18UITraitEnvironmentP", "URLEncoding"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "contact"]
 - !private ["So18UITraitEnvironmentP", "contactList"]
@@ -1232,9 +1297,11 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
 - ["So18UITraitEnvironmentP", "viewForZooming"]
 - ["So18UITraitEnvironmentP", "viewForZoomingInScrollView"]
+- !private ["So23UIUserActivityRestoringP", "AF"]
 - ["So23UIUserActivityRestoringP", "Contact"]
 - !private ["So23UIUserActivityRestoringP", "String"]
 - !private ["So23UIUserActivityRestoringP", "UINib"]
+- !private ["So23UIUserActivityRestoringP", "URLEncoding"]
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "contact"]
 - !private ["So23UIUserActivityRestoringP", "contactList"]
@@ -1289,6 +1356,7 @@ depends-member:
 - !private ["So6UIViewC", "reloadData"]
 - !private ["So6UIViewC", "text"]
 - !private ["So6UIViewC", "typeLabel"]
+- !private ["So16UIViewControllerC", "AF"]
 - ["So16UIViewControllerC", "Bool"]
 - ["So16UIViewControllerC", "Contact"]
 - !private ["So16UIViewControllerC", "ContactCell"]
@@ -1301,6 +1369,7 @@ depends-member:
 - ["So16UIViewControllerC", "UIStoryboardSegue"]
 - ["So16UIViewControllerC", "UITableView"]
 - ["So16UIViewControllerC", "UITableViewCell"]
+- !private ["So16UIViewControllerC", "URLEncoding"]
 - ["So16UIViewControllerC", ""]
 - !private ["So16UIViewControllerC", "contact"]
 - ["So16UIViewControllerC", "contactList"]
@@ -1337,6 +1406,10 @@ depends-member:
 - ["So16UIViewControllerC", "viewDidLoad"]
 - ["So16UIViewControllerC", "viewForZooming"]
 - ["So16UIViewControllerC", "viewForZoomingInScrollView"]
+- !private ["9Alamofire14URLConvertibleP", "init"]
+- !private ["9Alamofire14URLConvertibleP", "init"]
+- !private ["9Alamofire11URLEncodingV", "default"]
+- !private ["10homework0214ViewControllerC", "AF"]
 - ["10homework0214ViewControllerC", "Bool"]
 - ["10homework0214ViewControllerC", "Contact"]
 - !private ["10homework0214ViewControllerC", "ContactCell"]
@@ -1349,6 +1422,7 @@ depends-member:
 - ["10homework0214ViewControllerC", "UIStoryboardSegue"]
 - ["10homework0214ViewControllerC", "UITableView"]
 - ["10homework0214ViewControllerC", "UITableViewCell"]
+- !private ["10homework0214ViewControllerC", "URLEncoding"]
 - ["10homework0214ViewControllerC", "contactList"]
 - ["10homework0214ViewControllerC", "deinit"]
 - ["10homework0214ViewControllerC", "deleteClicked"]
@@ -1412,9 +1486,11 @@ depends-member:
 - !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "remove"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "AF"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "Contact"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "String"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UINib"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "URLEncoding"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "contact"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "contactList"]
@@ -1475,6 +1551,7 @@ depends-member:
 - !private ["s16_SwiftStringViewP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
+- !private "9Alamofire2AFO"
 - !private "Sa"
 - !private "s13ArrayProtocolP"
 - !private "SK"
@@ -1490,6 +1567,8 @@ depends-nominal:
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
+- !private "9Alamofire11DataRequestC"
+- !private "9Alamofire12DataResponseV"
 - !private "Se"
 - !private "10homework0221DetailsViewControllerC"
 - !private "SE"
@@ -1500,6 +1579,7 @@ depends-nominal:
 - !private "s23ExpressibleByNilLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "9Alamofire10HTTPMethodO"
 - "SH"
 - !private "10Foundation9IndexPathV"
 - !private "s25LosslessStringConvertibleP"
@@ -1510,9 +1590,13 @@ depends-nominal:
 - "So8NSObjectC"
 - "So8NSObjectP"
 - !private "Sq"
+- !private "9Alamofire17ParameterEncodingP"
 - !private "Sk"
 - !private "Sm"
+- !private "SY"
 - !private "10Foundation20ReferenceConvertibleP"
+- !private "9Alamofire7RequestC"
+- !private "9Alamofire6ResultO"
 - !private "ST"
 - !private "SS"
 - !private "Sy"
@@ -1549,6 +1633,8 @@ depends-nominal:
 - "So23UIUserActivityRestoringP"
 - !private "So6UIViewC"
 - "So16UIViewControllerC"
+- !private "9Alamofire14URLConvertibleP"
+- !private "9Alamofire11URLEncodingV"
 - "10homework0214ViewControllerC"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
@@ -1565,6 +1651,7 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/Maripau/Documents/Spring 2019/MobileApp /homework02-master/DerivedData/homework02/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
@@ -1577,6 +1664,9 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/Maripau/Documents/Spring 2019/MobileApp /homework02-master/DerivedData/homework02/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/Maripau/Documents/Spring 2019/MobileApp /homework02-master/DerivedData/homework02/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/Maripau/Documents/Spring 2019/MobileApp /homework02-master/DerivedData/homework02/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
@@ -1588,4 +1678,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "cab288ec85cb5035450e2263ed507a14"
+interface-hash: "2fb292691bf35a2f2e62d6260cb90534"

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13F0ED81749AE12A20BEF9A4 /* Pods_homework02.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E10A37D95913EAB946779136 /* Pods_homework02.framework */; };
 		8107022B2227665100DC5859 /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810702292227665100DC5859 /* ContactCell.swift */; };
 		8107022C2227665100DC5859 /* ContactCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8107022A2227665100DC5859 /* ContactCell.xib */; };
 		8107023022277E2300DC5859 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8107022F22277E2300DC5859 /* EditViewController.swift */; };
@@ -22,9 +23,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A0AD5F65E98DF8ABD70221C /* Pods-homework02.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-homework02.debug.xcconfig"; path = "Target Support Files/Pods-homework02/Pods-homework02.debug.xcconfig"; sourceTree = "<group>"; };
 		810702292227665100DC5859 /* ContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
 		8107022A2227665100DC5859 /* ContactCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactCell.xib; sourceTree = "<group>"; };
 		8107022F22277E2300DC5859 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		94711DC05192601B292B043B /* Pods-homework02.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-homework02.release.xcconfig"; path = "Target Support Files/Pods-homework02/Pods-homework02.release.xcconfig"; sourceTree = "<group>"; };
 		B95EC8E2221B087600B5E0C7 /* homework02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = homework02.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B95EC8E5221B087600B5E0C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B95EC8E7221B087600B5E0C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		B95EC8F9221B13D500B5E0C7 /* NewContactVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewContactVC.swift; sourceTree = "<group>"; };
 		B95EC8FB221B5A2700B5E0C7 /* ContactTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableCell.swift; sourceTree = "<group>"; };
 		B9647484221EFEF50045CB47 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		E10A37D95913EAB946779136 /* Pods_homework02.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_homework02.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13F0ED81749AE12A20BEF9A4 /* Pods_homework02.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +59,8 @@
 			children = (
 				B95EC8E4221B087600B5E0C7 /* homework02 */,
 				B95EC8E3221B087600B5E0C7 /* Products */,
+				EFB2546D5EB0B578D71B7579 /* Pods */,
+				FA09D79BD62BAB09DC02D0FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +92,24 @@
 			path = homework02;
 			sourceTree = "<group>";
 		};
+		EFB2546D5EB0B578D71B7579 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1A0AD5F65E98DF8ABD70221C /* Pods-homework02.debug.xcconfig */,
+				94711DC05192601B292B043B /* Pods-homework02.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FA09D79BD62BAB09DC02D0FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E10A37D95913EAB946779136 /* Pods_homework02.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -92,9 +117,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B95EC8F4221B087C00B5E0C7 /* Build configuration list for PBXNativeTarget "homework02" */;
 			buildPhases = (
+				1E1593F9288AE5DF177C24AA /* [CP] Check Pods Manifest.lock */,
 				B95EC8DE221B087600B5E0C7 /* Sources */,
 				B95EC8DF221B087600B5E0C7 /* Frameworks */,
 				B95EC8E0221B087600B5E0C7 /* Resources */,
+				36A8F31856D8FB2D873FE61D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +178,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E1593F9288AE5DF177C24AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-homework02-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36A8F31856D8FB2D873FE61D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-homework02/Pods-homework02-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-homework02/Pods-homework02-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B95EC8DE221B087600B5E0C7 /* Sources */ = {
@@ -308,6 +382,7 @@
 		};
 		B95EC8F5221B087C00B5E0C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A0AD5F65E98DF8ABD70221C /* Pods-homework02.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -327,6 +402,7 @@
 		};
 		B95EC8F6221B087C00B5E0C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94711DC05192601B292B043B /* Pods-homework02.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
