@@ -1,0 +1,12 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "9c1052b341d3371195239d877c65d690"
+build_time: [1551750689, 111783000]
+inputs:
+  "/Users/Maripau/Documents/Spring 2019/MobileApp /homework02-master/homework02/EditViewController.swift": [1551323279, 0]
+  "/Users/Maripau/Documents/Spring 2019/MobileApp /homework02-master/homework02/NewContactVC.swift": [1550762452, 0]
+  "/Users/Maripau/Documents/Spring 2019/MobileApp /homework02-master/homework02/Contact.swift": [1550762452, 0]
+  "/Users/Maripau/Documents/Spring 2019/MobileApp /homework02-master/homework02/ContactTableCell.swift": [1550779979, 0]
+  "/Users/Maripau/Documents/Spring 2019/MobileApp /homework02-master/homework02/ViewController.swift": [1551323506, 0]
+  "/Users/Maripau/Documents/Spring 2019/MobileApp /homework02-master/homework02/AppDelegate.swift": [1550762452, 0]
+  "/Users/Maripau/Documents/Spring 2019/MobileApp /homework02-master/homework02/ContactCell.swift": [1551315941, 0]
+  "/Users/Maripau/Documents/Spring 2019/MobileApp /homework02-master/homework02/DetailsViewController.swift": [1551322458, 0]
